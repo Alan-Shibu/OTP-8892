@@ -27,16 +27,16 @@ function(log, record) {
     function performUpdate(){
         if(scriptContext.fieldId === 'defaultaddress')
         {
-            
+            console.log("Address change detected!")
             scriptContext.currentRecord.setValue({fieldId:'custentity_jj_address_change_checkbox',value:true,ignoreFieldChange:true});
         }
         else{
-            
+            console.log("No address change detected!")
             scriptContext.currentRecord.setValue({fieldId:'custentity_jj_address_change_checkbox', value:false,ignoreFieldChange:true});
         }
     }
     function fieldChanged(scriptContext) {
-        
+        console.log("Field changed triggered")
         
         performUpdate();
     }
