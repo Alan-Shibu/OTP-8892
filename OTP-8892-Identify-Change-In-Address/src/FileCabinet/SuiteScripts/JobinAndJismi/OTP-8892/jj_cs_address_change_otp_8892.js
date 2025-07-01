@@ -21,16 +21,15 @@
  * 
  * REVISION HISTORY 
  * 
- * @version 1.0   01-August-2022 :  The initial build was created by JJ0400 
+ * @version 1.0   June-30-2025 :  The initial build was created by JJ0400 
  * 
  * 
  *************************************************************************************/ 
-define(["N/log", "N/record"], 
+define(["N/log"], 
 /**
  * @param{log} log
- * @param{record} record
  */
-function (log, record) {
+function (log) {
   /**
    * Function to be executed when field is changed.
    *
